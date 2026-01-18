@@ -6,7 +6,7 @@ Este projeto é uma aplicação desktop, desenvolvida com **HTML5, CSS3, JavaScr
 
 ## Como executar 
 
-1-Copie o link: https://gabriel-oliveira05.github.io/Story-Training/
+1-Copie o link: https://gabriel-oliveira05.github.io/Spotify-Page/
 
 2-Cole no seu navegador e tenha a experiência da página
 
