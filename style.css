@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff; 
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*navegação*/
+.sidebar{
+    width: 300px;
+    background-color: #121212;
+    padding: 10px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    
+}
+
+
+/*icon logo Spotify*/
+.nav-logo i{
+    font-size: 30px;
+}
+
+/*icon e "sua biblioteca +"*/
+.nav-library{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-library i, .nav-library p {
+    font-size: 14px;
+    color: #b7b3b6;   
+    cursor: pointer;
+}
+
+.nav-library h3{
+    font-size: 14px;
+    color: #b7b3b6;   
+    cursor: pointer;
+    
+    position: absolute;
+    margin-left: 16.5%;    
+}
+/* crie playlist, podcast*/
+.nav-playlist, .nav-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* botoes dos dois box silver*/
+.nav-playlist button, .nav-podcast button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/*paragrafo box silver  */
+.nav-playlist p, .nav-podcast p {
+    font-size: 12px;
+}
+
+/* links "âncora"*/
+.nav-footer{
+    margin-top: auto;
+  
+}
+
+.nav-footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+/*botao "Portugues do Brasil"*/
+.nav-lang-button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.artist-card, .album-card{
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.artist-card:hover, .album-card:hover{
+    background-color: #282828;
+        transform: scale(1.1);
+}
+
+
+.artists-grid img, .albums-grid img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+ 
+
+main{
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 350px;  
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin-left: 10px;
+
+    /* Faz o input ocupar todo o espaço vago entre a lupa e a cesta*/
+    flex: 1;
+    min-width: 0;
+}
+
+
+.basket-icon{
+    color: #b3b3b3; /* Cor cinza padrão do Spotify */
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.basket-icon:hover{
+    color:#fff;
+    transform: scale(1.1);
+}
+
+
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+    
+.artists-grid h3, .albums-grid h3{
+    font-size: 12px;
+}
+
+.artists-grid p, .albums-grid p{
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+
+.content-header{
+    display: flex;
+    justify-content: space-between; /* Um na esquerda, outro na direita */
+    align-items: baseline; /* Isso alinha os textos pela "base" das letras */
+    margin-bottom: 20px; /* Espaço para o grid abaixo */
+   
+}
+
+.mostrar{
+   font-size: 12px;                /* Um pouco maior para ficar legível */
+    color: #b3b3b3;                 /* Cor cinza do Spotify */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+.mostrar:hover {
+    text-decoration: underline;     /* Efeito de link ao passar o mouse */
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between; /* Empurra a busca para a esquerda e o botão para a direita */
+    align-items: center; /*Alinha os dois verticalmente ao centro*/
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.entrar{
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: bold;
+    white-space: nowrap; /*Impede que o texto quebre em duas linhas em telas pequenas*/
+   
+}
+
+.inscreva-se{
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap; /*Impede que o texto quebre em duas linhas em telas pequenas*/
+}
+
+
+
+.entrar:hover{
+    background-color: #242424;
+    color: #fff;
+}
+
+.buttons-entrar, .button-inscrevase{
+    display: flex;
+    justify-content: flex-end; /* Garante que o conteúdo dentro dele vá para a direita */
+}

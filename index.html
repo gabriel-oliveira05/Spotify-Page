@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght,MONO@200..800,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify-Page</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-logo">
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+
+            <div class="nav-library">
+                <i class="fa-solid fa-lines-leaning"></i>
+                <p>Sua Biblioteca</p>
+                <h3>+</h3>
+            </div>
+
+            
+            <div class="nav-playlist">
+                <h5>Crie sua Primeria Playlist</h5>
+                <p>É facil, vamos te ajudar</p>
+                <button>Criar Playlist</button>
+            </div>
+
+            <div class="nav-podcast">
+                <h5>Que tal Seguir um Podcast?</h5>
+                <p>Avisaremos você sobre nossos Episódios</p>
+                <button>Explore Podcast</button>
+            </div>
+
+            <div class="nav-footer">
+                <a href="#">legal</a>
+                <a href="#">Centro de Privacidade</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre anúncios</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+
+            <button class="nav-lang-button">
+                <i class="fa-solid fa-globe"></i>
+                Português do Brasil
+            </button>
+        </nav>
+
+        <main>
+            <header class="header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i> <input placeholder="O que você quer ouvir?"><span style="color: #b3b3b3;">|</span><i class="fa-solid fa-shopping-basket basket-icon"></i>
+
+                </div>
+
+                <div class="buttons-entrar">
+                    <button class="inscreva-se">Inscrever-se</button>
+                    <button class="entrar">Entrar</button>
+                </div>
+
+            </header>
+
+            <section class="content">
+                <div class="content-header">
+                    <h2>Artistas Populares </h2>
+                    <p class="mostrar">Mostrar tudo</p>
+                </div>
+                <div class="artists-grid">
+                    <!--Inserir dados com JS-->
+                </div>
+
+                <div class="content-header">
+                    <h2>Álbuns Populares </h2>
+                    <p class="mostrar">Mostrar tudo</p>
+                </div>
+                <div class="albums-grid">
+                    <!--Inserir dados com JS-->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
