@@ -6,9 +6,7 @@ Este projeto é uma aplicação desktop, desenvolvida com *HTML5, CSS3, JavaScri
 
 ## Como executar 
 
-1-Copie o link: https://gabriel-oliveira05.github.io/Spotify-Page/
-
-2-Cole no seu navegador e tenha a experiência da página
+1-Clique no link e tenha uma experiência com a página: https://gabriel-oliveira05.github.io/Spotify-Page/
 
 ## Autor
 
