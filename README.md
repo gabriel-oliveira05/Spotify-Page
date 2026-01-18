@@ -12,4 +12,4 @@ Este projeto é uma aplicação desktop, desenvolvida com **HTML5, CSS3, JavaScr
 
 ## Autor
 
-gabriel-oliveira05# Página do Spotify
+gabriel-oliveira05
